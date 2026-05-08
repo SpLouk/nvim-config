@@ -25,6 +25,7 @@ return {
       map("n", "<leader>hr", gs.reset_hunk, { desc = "Reset this hunk" })
       map("n", "<leader>hb", gs.blame_line, { desc = "Show blame for this line" })
       map("n", "<leader>hp", gs.preview_hunk_inline, { desc = "Preview hunk inline" })
+      map("n", "<leader>gb", gs.blame, { desc = "Git blame" })
     end,
   },
 }

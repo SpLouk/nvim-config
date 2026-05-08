@@ -7,9 +7,5 @@ return {
       typescript = { "eslint_d" },
       typescriptreact = { "eslint_d" },
     },
-    format_on_save = {
-      timeout_ms = 500,
-      lsp_fallback = true,
-    },
   },
 }
