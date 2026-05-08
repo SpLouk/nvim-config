@@ -21,9 +21,10 @@ return {
       map("n", "[c", gs.prev_hunk)
 
       -- Actions
-      map("n", "<leader>hs", gs.stage_hunk)
-      map("n", "<leader>hr", gs.reset_hunk)
-      map("n", "<leader>hb", gs.blame_line)
+      map("n", "<leader>hs", gs.stage_hunk, { desc = "Stage this hunk" })
+      map("n", "<leader>hr", gs.reset_hunk, { desc = "Reset this hunk" })
+      map("n", "<leader>hb", gs.blame_line, { desc = "Show blame for this line" })
+      map("n", "<leader>hp", gs.preview_hunk_inline, { desc = "Preview hunk inline" })
     end,
   },
 }
