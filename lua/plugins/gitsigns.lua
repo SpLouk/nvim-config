@@ -17,8 +17,8 @@ return {
       end
 
       -- Navigation
-      map("n", "]c", gs.next_hunk)
-      map("n", "[c", gs.prev_hunk)
+      map("n", "]h", gs.next_hunk, { desc = "Next hunk" })
+      map("n", "[h", gs.prev_hunk, { desc = "Previous hunk" })
 
       -- Actions
       map("n", "<leader>hs", gs.stage_hunk, { desc = "Stage this hunk" })
