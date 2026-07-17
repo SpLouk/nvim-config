@@ -68,3 +68,10 @@ require("lspconfig").vtsls.setup({
     },
   },
 })
+
+require("lspconfig").clangd.setup({
+  cmd = {
+    "clangd",
+    "--compile-commands-dir=build",
+  },
+})
